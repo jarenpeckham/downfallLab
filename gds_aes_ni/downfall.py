@@ -2,7 +2,6 @@ from subprocess import call
 import matplotlib.pyplot as plt
 import getQwords2
 
-#provides all random values would need the student to graph and distinguish
 
 
 if __name__ == "__main__":
