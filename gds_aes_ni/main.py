@@ -1,25 +1,12 @@
-import getQwords2
-import bellcurve
 from subprocess import call
+import matplotlib.pyplot as plt
+import getQwords2
 
 #provides all random values would need the student to graph and distinguish
-def distributionAll():
-    lst = []
-    for i in range(10000):
-        lst.append(bellcurve.distribution())
-        
-    return lst
+
 
 if __name__ == "__main__":
-    vals = distributionAll()
-    val= open('vals.csv', 'w')
-    count = 0
-    for point in vals:
-        count += 1
-        val.write(str(point))
-        val.write(',')
-
-
+    
     print("1st Qword ")
     print
     qwor1 = getQwords2.getQword1()
